@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "start": "nx serve void"
+    "host": "nx serve void",
+    "cookie": "nx serve cookie"
   },
   "private": true,
   "dependencies": {
