@@ -1,5 +1,6 @@
 import { Route } from '@angular/router';
-import { AppComponent } from './app.component';
+import { HomeComponent } from './routes/home/home.component';
+import { AboutComponent } from './routes/about/about.component';
 
 export const appRoutes: Route[] = [
   {
@@ -7,7 +8,15 @@ export const appRoutes: Route[] = [
     loadChildren: () => import('cookie/Routes').then((m) => m.remoteRoutes),
   },
   {
+    path: 'ssr',
+    loadChildren: () => import('cookie-ssr/Routes').then((m) => m.remoteRoutes),
+  },
+  {
     path: '',
-    component: AppComponent,
+    component: HomeComponent,
+  },
+  {
+    path: 'about',
+    component: AboutComponent,
   },
 ];

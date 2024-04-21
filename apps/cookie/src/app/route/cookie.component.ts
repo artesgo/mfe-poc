@@ -1,6 +1,7 @@
 import { Component, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { CookieService } from '../cookie.service';
+import { UserService } from '@cookie/user';
 
 @Component({
   selector: 'wah-cookie',
@@ -11,5 +12,6 @@ import { CookieService } from '../cookie.service';
 })
 export class CookieComponent {
   service = inject(CookieService);
+  user = inject(UserService).user;
   cookie = this.service.state;
 }
