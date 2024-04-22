@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component, signal } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 
@@ -10,4 +10,6 @@ import { RouterModule } from '@angular/router';
   styleUrl: './nav.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class NavComponent {}
+export class NavComponent {
+  menu = signal(false);
+}

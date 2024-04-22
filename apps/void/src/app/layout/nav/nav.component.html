@@ -1,6 +1,14 @@
-<ul class="remote-menu">
-  <li><a routerLink="/">Home</a></li>
-  <li><a routerLink="/cookie">Cookie</a></li>
-  <li><a routerLink="/ssr">ssr</a></li>
-  <li><a routerLink="/about">about</a></li>
-</ul>
+<nav class="flex justify-between flex-row">
+  <button class="menu-dropdown menu-dropdown-toggle" (click)="menu.set(!menu())">Menu</button>
+  <h1>Title</h1>
+  <button class="link-primary">Login</button>
+</nav>
+
+@if (menu()) {
+  <ul class="menu">
+    <li><a (click)="menu.set(false)" class="link-primary" routerLinkActive="active" routerLink="/home">Home</a></li>
+    <li><a (click)="menu.set(false)" class="link-primary" routerLinkActive="active" routerLink="/cookie">Cookie</a></li>
+    <li><a (click)="menu.set(false)" class="link-primary" routerLinkActive="active" routerLink="/ssr">ssr</a></li>
+    <li><a (click)="menu.set(false)" class="link-primary" routerLinkActive="active" routerLink="/about">about</a></li>
+  </ul>
+}

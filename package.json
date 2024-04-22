@@ -4,7 +4,7 @@
   "license": "MIT",
   "scripts": {
     "host": "nx serve void",
-    "ssr": "nx serve cookie-server",
+    "ssr": "nx serve cookie-ssr",
     "cookie": "nx serve cookie"
   },
   "private": true,
@@ -57,8 +57,9 @@
     "@types/node": "18.16.9",
     "@typescript-eslint/eslint-plugin": "^7.3.0",
     "@typescript-eslint/parser": "^7.3.0",
-    "autoprefixer": "^10.4.0",
+    "autoprefixer": "^10.4.19",
     "browser-sync": "^3.0.0",
+    "daisyui": "^4.10.2",
     "eslint": "~8.57.0",
     "eslint-config-prettier": "^9.0.0",
     "eslint-plugin-playwright": "^0.15.3",
@@ -68,11 +69,11 @@
     "jsonc-eslint-parser": "^2.1.0",
     "ng-packagr": "~17.3.0",
     "nx": "18.3.2",
-    "postcss": "^8.4.5",
+    "postcss": "^8.4.38",
     "postcss-url": "~10.1.3",
     "prettier": "^2.6.2",
     "sass": "^1.75.0",
-    "tailwindcss": "^3.0.2",
+    "tailwindcss": "^3.4.3",
     "ts-jest": "^29.1.0",
     "ts-node": "10.9.1",
     "typescript": "~5.4.2"
